@@ -1,15 +1,15 @@
-import React from "react";
-import Root from "../routes/Root";
-
+import React from 'react'
+import PostForm from './PostForm';
+import EditPost from './EditPost';
+import { useState } from "react";
 const Home = () => {
-  setPosts();
     return (
-        <div className="bg-gray-100 min-h-screen py-8">
-        <div className="max-w-5xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8">Welcome to the Home page</h1>
-        </div>
-      </div>
+      <>
+        <div className="text-2xl pl-5">Create a Post</div>;
+        <PostForm />
+        
+      </>
     );
-  };
-  
-  export default Home;
+}
+
+export default Home;

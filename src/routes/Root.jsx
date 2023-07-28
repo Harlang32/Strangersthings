@@ -5,43 +5,35 @@ import {Link, NavLink} from "react-router-dom";
 export default function Root() {
   return (
     <div className="w-full h-2">
-      <nav className="bg-gray-800">
+      <nav className="bg-yellow-500">
         <div className="container mx-auto">
+          <h1 className=" text-white text-4xl font-bold text-left">
+            Stranger's Things
+          </h1>
           <div className="flex items-center justify-between px-4 py-3">
             <NavLink
-              to={`/about`}
+              to={`/login`}
               className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : ""
               }
-            >
-              About
-            </NavLink>
-            <button
-              className="text-white focus:outline-none focus:text-white lg:hidden"
-              type="button"
-              aria-label="Toggle navigation"
-            >
-              <svg
-                className="h-6 w-6 fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  className="heroicon-ui"
-                  d="M20 12H4M20 6H4M20 18H4"
-                ></path>
-              </svg>
-            </button>
-            <div className=" flex items-center">
+            ></NavLink>
+            
+            <div className="text-xl flex items-center">
               <div className="mr-10">
-                <Link to={"/todos/1"} className="text-white mr-4">
-                  Todo 1
+                <Link to={"/Home"} className="text-white mr-4">
+                  Home
                 </Link>
-                <Link to={"/todos/2"} className="text-white mr-4">
-                  Todo 2
+                <Link to={"/Profile"} className="text-white mr-4">
+                  Profile
                 </Link>
-                <Link to={"/index"} className="text-white">
-                  Blog
+                <Link to={"/Login"} className="text-white mr-4">
+                  Login
+                </Link>
+                <Link to={"/index"} className="text-white mr-4">
+                  Posts
+                </Link>
+                <Link to={"/logout"} className="text-white mr-4">
+                  Logout
                 </Link>
               </div>
             </div>
