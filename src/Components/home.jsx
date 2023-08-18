@@ -5,7 +5,7 @@ import { useState } from "react";
 const Home = () => {
     return (
       <>
-        <div className="text-2xl pl-7">Sell Something!</div>;
+        <div className="text-2xl pl-7">Welcome to the Home page. Sell Something!</div>;
         <PostForm />
         
       </>
