@@ -32,7 +32,7 @@ const App = () => {
   return (
     <>
     <EditPost/>
-      <h1 className="text-4xl pl-5">Posts</h1>
+      <h1 className="text-3xl pl-5">Posts</h1>
       {posts &&
         posts.map((post, index) => {
           return (
