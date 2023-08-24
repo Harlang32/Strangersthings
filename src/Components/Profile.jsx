@@ -6,6 +6,7 @@ const Profile = () => {
  
     return (
       <>
+      <div className="text-2xl font-bold text-gray-800 mb-8">(`User: ${username}`)</div>
         <div className="text-2xl font-bold text-gray-800 mb-8">
       
         </div>
