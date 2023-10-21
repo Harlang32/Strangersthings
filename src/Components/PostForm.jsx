@@ -127,7 +127,7 @@ const PostForm = ({}) => {
       <button
         type="submit"
         onClick={handlePostSubmit}
-        className="btn btn-outline-primary m-2 text-xl font-normal text-gray-800 mb-8 border-2 rounded border-gray-600"
+        className="btn btn-outline-primary m-2 text-xl font-normal text-gray-700 mb-8 border-2 rounded border-gray-600"
       >
         Submit
       </button>
